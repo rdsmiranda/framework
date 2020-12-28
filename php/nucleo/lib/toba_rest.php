@@ -82,7 +82,7 @@ class toba_rest
 		}
 		//Busca version de la API (como subconjunto major.minor) obligatorio
 		if (isset($datos_ini_proyecto['proyecto']['api_major']) && isset($datos_ini_proyecto['proyecto']['api_minor'])) {
-			$settings['api_version'] = "v{$datos_ini_proyecto['proyecto']['api_major']}.{$datos_ini_proyecto['proyecto']['api_minor']}";
+			$settings['api_version'] = "{$datos_ini_proyecto['proyecto']['api_major']}.{$datos_ini_proyecto['proyecto']['api_minor']}";
 			$settings['api_major'] = $datos_ini_proyecto['proyecto']['api_major'];
 			$settings['api_minor'] = $datos_ini_proyecto['proyecto']['api_minor'];
 		} else {
